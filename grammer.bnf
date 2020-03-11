@@ -1,0 +1,15 @@
+small  := "a" | ... | "z"
+large  := "A" | ... | "Z"
+letter := small | large | "_"
+digit  := "a" | ... | "z"
+
+identifier  := letter { letter | digit }
+int_literal := { digit }
+definion    := ":="
+newline     := "\n"
+
+source         := { line }
+line           := var_definition newline
+var_definition := var_name definion value
+var_name       := identifier
+value          := int_literal
