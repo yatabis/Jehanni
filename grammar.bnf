@@ -1,7 +1,7 @@
 small  := "a" | ... | "z"
 large  := "A" | ... | "Z"
 letter := small | large | "_"
-digit  := "a" | ... | "z"
+digit  := "0" | ... | "9"
 
 identifier  := letter { letter | digit }
 int_literal := { digit }
