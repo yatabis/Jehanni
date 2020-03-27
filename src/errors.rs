@@ -19,7 +19,7 @@ impl fmt::Display for Error {
 }
 
 pub fn raise(e: Error) {
-    panic!("{}", e);
-    // eprintln!("{}", e);
-    // exit(1);
+    // panic!("{}", e);
+    eprintln!("{}", e);
+    exit(1);
 }

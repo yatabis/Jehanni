@@ -103,6 +103,7 @@ Cargo.lock
 **/*.rs.bk
 
 # user defined
-main.jh
+out.rs
+*.jh
 
 # End of https://www.gitignore.io/api/rust,clion
