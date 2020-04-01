@@ -70,15 +70,15 @@ test01 := 01
 
 #### 要素
 
-| 意味         | 名称          | 定義                           |
-| ------------ | ------------- | ------------------------------ |
-| 識別子       | identifier    | `letter | { letter | digit }`  |
-| 整数リテラル | int_literal   | `{ digit }`                    |
-| 小数リテラル | float_literal | `int_literal "."  int_literal` |
-| 実数リテラル | real_literal  | `int_literal | float_literal`  |
-| 数リテラル   | num_literal   | `real_literal`                 |
-| 定義記号     | definion      | `":="`                         |
-| 改行記号     | newline       | `"\n"`                         |
+| 意味         | 名称                                 | 定義                                                  |
+| ------------ | ------------------------------------ | ----------------------------------------------------- |
+| 識別子       | identifier                           | `letter | { letter | digit }`                         |
+| 整数リテラル | int_literal                          | `{ digit }`                                           |
+| 小数リテラル | <font color=red>float_literal</font> | <font color=red>`int_literal "."  int_literal`</font> |
+| 実数リテラル | <font color=red>real_literal</font>  | <font color=red>`int_literal | float_literal`</font>  |
+| 数リテラル   | <font color=red>num_literal</font>   | <font color=red>`real_literal`</font>                 |
+| 定義記号     | definion                             | `":="`                                                |
+| 改行記号     | newline                              | `"\n"`                                                |
 
 #### 構造
 
@@ -94,13 +94,13 @@ test01 := 01
 
 **実数リテラル** は **整数リテラル** (int_literal) または **小数リテラル** (float_literal)
 
-| 意味         | 名称           | 定義                      |
-| ------------ | -------------- | ------------------------- |
-| 変数名       | var_name       | `identifier`              |
-| 値           | value          | `num_literal`             |
-| 変数定義     | var_definition | `var_name definion value` |
-| 行           | line           | `var_definition newline`  |
-| ソースコード | source         | `{ line }`                |
+| 意味         | 名称           | 定義                          |
+| ------------ | -------------- | ----------------------------- |
+| 変数名       | var_name       | `identifier`                  |
+| 値           | value          | <font color=red>`num_literal`</font> |
+| 変数定義     | var_definition | `var_name definion value`     |
+| 行           | line           | `var_definition newline`      |
+| ソースコード | source         | `{ line }`                    |
 
 #### 例
 
